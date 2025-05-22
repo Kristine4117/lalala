@@ -1,0 +1,61 @@
+#referenced using AI to help with the code from lines 1, 3-4
+def calculate_monthly_payment(principal, annual_rate, months):
+    """Calculate monthly loan payment using the loan payment formula"""
+    monthly_rate = annual_rate / 12 / 100
+    payment = principal * (monthly_rate * (1 + monthly_rate)**months) / ((1 + monthly_rate)**months - 1)
+    return round(payment, 2)
+#referenced using AI to help witht the code from lines 11 (learned how to prevent users from entering invalid names)
+print("Hello! Welcome to the Monthly Interest Calculator!")
+while True:
+  name = input("Enter your name here: ")
+  if name.replace(" ", "").isalpha():
+      print("Hello, " + name + "!")
+      break
+  else:
+      print("Please enter a valid name")
+type_of_calculation = print("Will you be calculating Credit Card Statement Balance or Loan Payment?")
+interest_type = input("Enter Your Option Here: ")
+
+credit = ["Credit Card Statement Balance", 
+  "Credit Card", 
+  "statement balance", 
+  "Credit", 
+  "card", 
+  "statement",
+  "credit ",
+  "card statement "]
+
+credit = [option.casefold() for option in credit]
+
+loan = ["Loan Payment", "Loan", "Loan ", "payment"]
+loan = [option.casefold() for option in loan]
+
+if interest_type.casefold() in credit:
+  print("You have chosen Credit Card Statement Balance")
+  print("Please enter the following information")
+  balance = float(input("What is your current balance in dollars? "))
+  interest_rate = float(input("What is your interest rate in percent? "))
+  payment = float(input("How much is your monthly payment? "))
+  month = int(input("How many months do you want to see the balance for? "))
+  interest_rate = interest_rate/100
+  for i in range(month):
+    balance = balance + (balance * interest_rate) - payment
+    balance = round(balance, 2)
+    if balance < 0: 
+      print("Your balance will be paid off after " + str(i+1) + " months.")
+      break
+    elif balance > 0: 
+      print("Your balance after month " + str(i+1) + " is " +     str(balance))
+  
+elif interest_type.casefold() in loan:
+  print("You have chosen Loan Payment")
+  print("Please enter the following information")
+  loan_amount = float(input("What is the amount of your loan that you are planning to take? "))
+  interest_rate = float(input("What is your interest rate in percent? "))
+  month = int(input("How long do you plan to pay for your loan in months?"))
+  monthly_payment = calculate_monthly_payment(loan_amount, interest_rate, month)
+  print(f"Your monthly payment will need to be: ${monthly_payment}" " in order to pay off your loan in " + str(month) + " months")
+   
+else:
+  print("Please enter a valid option")
+
