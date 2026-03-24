@@ -1,0 +1,71 @@
+Programming Assignment 7:  Guitar Hero
+
+/******************************************************************************
+ *  Describe whatever help, if any, that you received on this assignment.
+ *     - Include help from individuals including course staff, lab TAs,
+ *           classmates, friends,  external sources, etc. Attribute them
+ *           by name; specify the nature of the help; and include the date(s)
+ *           on which you received help.
+ *     - Do not include course materials (such as the lectures, precepts,
+ *           book site, and textbook).
+ *     - Write "none" if you did not receive any help.
+ *
+ *  Here is an example:
+ *
+ *      9/10/24 John von Neumann (lab TA)
+ *      Helped me fix a bug updating elements in a array.
+ *
+ *      9/11/24 Grace Hopper (faculty)
+ *      Explained how to use the StdAudio library.
+ *
+ *      9/11/24 AP Computer Science Notes (High school, 2024)
+ *      Reviewed using for-each loop for accessing elements in an array.
+ *
+ ******************************************************************************/
+
+
+11/08/2025 Palzom (lab TA)
+Helped us with debugging Ring Buffer and helped us with pluck and tic in
+GuitarString.
+
+11/09/2025 Donna Gabai (faculty)
+Helped us with creating the pluck and sample, as well debugging GuitarHero.
+
+
+/******************************************************************************
+ *  Write and sign the following student acknowledgment of original work.
+ *  For your signature, type /s/, followed by your name.
+ *  Each partner must do this. Here is an example:
+ *
+ *      This programming assignment represents my own work in accordance
+ *      with University regulations.  /s/ Ada Lovelace
+ *
+ *      This programming assignment represents my own work in accordance
+ *      with University regulations.  /s/ Alan Turing
+ ******************************************************************************/
+
+This programming assignment represents my own work in accordance with University
+regulations.  /s/ Kristine Nguyen
+
+This programming assignment represents my own work in accordance with
+University regulations.  /s/ Emilly Owino
+
+/******************************************************************************
+ *  Each partner must indicate below that they followed the COS 126
+ *  partnership rules.
+ *
+ *  For your signature, type /s/, followed by your name (as above).
+ *
+ *  Write "NA" if you did not work with a partner.
+ *
+ ******************************************************************************/
+
+My partner and I read, understood and adhered to the COS 126 programming
+assignment partnership rules.  We were together at all times when code
+(including required .txt files) was being written and submitted.
+/s/ Emilly Owino
+
+My partner and I read, understood and adhered to the COS 126 programming
+assignment partnership rules.  We were together at all times when code
+(including required .txt files) was being written and submitted.
+/s/ Kristine Nguyen
